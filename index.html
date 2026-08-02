@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -841,9 +840,6 @@
             letter-spacing: 0.5px;
         }
 
-
-
-
         /* ── SKILLS ── */
         #skills {
             background: var(--bg);
@@ -1089,6 +1085,13 @@
         .proj-ico {
             font-size: 2.5rem;
             margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 12px;
+            height: 120px;
+            width: 100%;
         }
 
         .proj-title {
@@ -1134,29 +1137,11 @@
             gap: 10px;
         }
 
-        .p1 .proj-f {
-            border-top: 3px solid var(--red)
-        }
-
-        .p2 .proj-f {
-            border-top: 3px solid var(--blue)
-        }
-
-        .p3 .proj-f {
-            border-top: 3px solid var(--yellow)
-        }
-
-        .p4 .proj-f {
-            border-top: 3px solid var(--green)
-        }
-
-        .p5 .proj-f {
-            border-top: 3px solid var(--orange)
-        }
-
-        .p6 .proj-f {
-            border-top: 3px solid #aaa
-        }
+        .p1 .proj-f { border-top: 3px solid var(--red) }
+        .p2 .proj-f { border-top: 3px solid var(--blue) }
+        .p3 .proj-f { border-top: 3px solid var(--yellow) }
+        .p4 .proj-f { border-top: 3px solid var(--green) }
+        .p5 .proj-f { border-top: 3px solid var(--orange) }
 
         /* ── CONTACT ── */
         #contact {
@@ -1288,11 +1273,9 @@
             background: rgba(255, 213, 0, 0.05);
         }
 
-        /* Magnetic Button Helper */
         .btn-m {
             transition: transform 0.1s ease-out;
         }
-
 
         /* ── SCROLL ANIMS ── */
         .up {
@@ -1306,48 +1289,23 @@
             transform: none;
         }
 
-        .up:nth-child(2) {
-            transition-delay: .1s
-        }
+        .up:nth-child(2) { transition-delay: .1s }
+        .up:nth-child(3) { transition-delay: .2s }
+        .up:nth-child(4) { transition-delay: .3s }
 
-        .up:nth-child(3) {
-            transition-delay: .2s
-        }
-
-        .up:nth-child(4) {
-            transition-delay: .3s
-        }
-
-        ::-webkit-scrollbar {
-            width: 5px
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--bg)
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--red);
-            border-radius: 3px
-        }
+        ::-webkit-scrollbar { width: 5px }
+        ::-webkit-scrollbar-track { background: var(--bg) }
+        ::-webkit-scrollbar-thumb { background: var(--red); border-radius: 3px }
 
         /* ── RESPONSIVE ── */
         @media(max-width:1100px) {
-            .skills-grid {
-                grid-template-columns: repeat(2, 1fr)
-            }
-
-            .projects-grid {
-                grid-template-columns: repeat(2, 1fr)
-            }
+            .skills-grid { grid-template-columns: repeat(2, 1fr) }
+            .projects-grid { grid-template-columns: repeat(2, 1fr) }
         }
 
         @media (max-width: 1024px) {
-
             .desktop-only-flex,
-            .desktop-only {
-                display: none !important;
-            }
+            .desktop-only { display: none !important; }
 
             #hero {
                 display: flex !important;
@@ -1388,19 +1346,10 @@
                 width: 100% !important;
             }
 
-            .mobile-only {
-                display: block !important;
-            }
+            .mobile-only { display: block !important; }
+            .mobile-only-flex { display: flex !important; }
 
-            .mobile-only-flex {
-                display: flex !important;
-            }
-
-            section {
-                padding: 80px 24px
-            }
-
-
+            section { padding: 80px 24px }
 
             #about {
                 display: flex;
@@ -1410,67 +1359,25 @@
                 align-items: center;
             }
 
-            .sec-head {
-                order: 1;
-                margin-bottom: 25px;
-            }
+            .sec-head { order: 1; margin-bottom: 25px; }
+            .about-photo { order: 2; width: 140px; height: 140px; margin: 0 auto; }
+            .about-stats-wrapper { order: 3; width: 100%; max-width: 320px; margin: 0 auto; }
+            .about-bio { order: 4; width: 100%; }
+            .about-container { display: contents; }
 
-            .about-photo {
-                order: 2;
-                width: 140px;
-                height: 140px;
-                margin: 0 auto;
-            }
-
-            .about-stats-wrapper {
-                order: 3;
-                width: 100%;
-                max-width: 320px;
-                margin: 0 auto;
-            }
-
-            .about-bio {
-                order: 4;
-                width: 100%;
-            }
-
-            .about-container {
-                display: contents;
-            }
-
-
-            .skills-grid {
-                grid-template-columns: repeat(2, 1fr)
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr
-            }
-
-            .f-row {
-                grid-template-columns: 1fr
-            }
-
-            .contact-box {
-                padding: 30px 22px
-            }
+            .skills-grid { grid-template-columns: repeat(2, 1fr) }
+            .projects-grid { grid-template-columns: 1fr }
+            .f-row { grid-template-columns: 1fr }
+            .contact-box { padding: 30px 22px }
         }
 
         @media(max-width:480px) {
-            .skills-grid {
-                grid-template-columns: 1fr
-            }
-
-            .nav-links {
-                gap: 20px
-            }
+            .skills-grid { grid-template-columns: 1fr }
+            .nav-links { gap: 20px }
         }
 
         @media(max-width:860px) {
-            .nav-toggle {
-                display: flex;
-            }
-
+            .nav-toggle { display: flex; }
             .nav-links {
                 position: fixed;
                 top: 0;
@@ -1486,17 +1393,10 @@
                 z-index: 1000;
                 padding: 40px;
             }
-
-            .nav-links.active {
-                right: 0;
-            }
-
-            .nav-links a {
-                font-size: 1.5rem;
-            }
+            .nav-links.active { right: 0; }
+            .nav-links a { font-size: 1.5rem; }
         }
 
-        /* ── SPINNER ── */
         .spinner {
             display: inline-block;
             width: 14px;
@@ -1510,9 +1410,7 @@
         }
 
         @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
+            to { transform: rotate(360deg); }
         }
     </style>
 </head>
@@ -1640,7 +1538,6 @@
                 </div>
             </div>
 
-            <!-- Right Side: Photo + Stats (Desktop) -->
             <div class="about-right-col desktop-only-flex up">
                 <div class="about-photo">
                     <img src="preview.png" alt="Zyrex" loading="lazy">
@@ -1696,11 +1593,10 @@
                     </div>
                 </div>
                 <div class="sk-name">Full Stack</div>
-                <div class="sk-desc">Frontend, backend &amp scalable web applications</div>
+                <div class="sk-desc">Frontend, backend &amp; scalable web applications</div>
                 <div class="bar-wrap">
                     <div class="bar" data-w="100"></div>
                 </div>
-
             </div>
             <div class="skill-card sk-css up">
                 <div class="sk-scene">
@@ -1771,61 +1667,97 @@
             <p class="sec-sub">Hover a card to reveal details</p>
         </div>
         <div class="projects-grid">
+            <!-- Project 1: Shopsyra -->
             <div class="proj p1 up">
                 <div class="proj-inner">
                     <div class="proj-f">
-                        <div class="proj-num">01 / 03</div>
-                        <div class="proj-ico"
-                            style="background-image: url('/C:/Users/Asus/.gemini/antigravity/brain/27dfebe1-757e-4d73-b059-d88e2f203946/potli_budget_app_1772912367902.png'); background-size: cover; border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px;">
-                        </div>
-                        <div class="proj-title">Potli</div>
-                        <div class="proj-tags"><span class="ptag"
-                                style="color:var(--yellow);border-color:var(--yellow)">Vercel</span><span class="ptag"
-                                style="color:var(--orange);border-color:var(--orange)">Budgeting</span></div>
-                    </div>
-                    <div class="proj-bk">
-                        <div class="proj-desc">Budget management website based on the Potli system. Tracking finances
-                            with Indonesian context.</div>
-                        <a href="https://potlis.vercel.app" class="proj-link" target="_blank">View Live &rarr;</a>
-                    </div>
-                </div>
-            </div>
-            <div class="proj p2 up">
-                <div class="proj-inner">
-                    <div class="proj-f">
-                        <div class="proj-num">02 / 03</div>
-                        <div class="proj-ico"
-                            style="background-image: url('/C:/Users/Asus/.gemini/antigravity/brain/27dfebe1-757e-4d73-b059-d88e2f203946/shopsyra_ai_shopping_1772912386811.png'); background-size: cover; border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px;">
-                        </div>
+                        <div class="proj-num">01 / 05</div>
+                        <div class="proj-ico">&#129302;</div>
                         <div class="proj-title">Shopsyra</div>
-                        <div class="proj-tags"><span class="ptag"
-                                style="color:var(--blue);border-color:var(--blue)">AI</span><span class="ptag"
-                                style="color:var(--green);border-color:var(--green)">Shopping</span></div>
+                        <div class="proj-tags">
+                            <span class="ptag" style="color:var(--blue);border-color:var(--blue)">AI</span>
+                            <span class="ptag" style="color:var(--green);border-color:var(--green)">Shopping</span>
+                        </div>
                     </div>
                     <div class="proj-bk">
-                        <div class="proj-desc">AI-powered chatbot for in-store product discovery and recommendations.
-                        </div>
+                        <div class="proj-desc">AI-powered chatbot for in-store product discovery and smart recommendations.</div>
                         <a href="https://shopsyra.vercel.app" class="proj-link" target="_blank">View Live &rarr;</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Project 2: SmartHome AI -->
+            <div class="proj p2 up">
+                <div class="proj-inner">
+                    <div class="proj-f">
+                        <div class="proj-num">02 / 05</div>
+                        <div class="proj-ico">&#127968;</div>
+                        <div class="proj-title">SmartHome AI</div>
+                        <div class="proj-tags">
+                            <span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">IoT</span>
+                            <span class="ptag" style="color:var(--red);border-color:var(--red)">Automation</span>
+                        </div>
+                    </div>
+                    <div class="proj-bk">
+                        <div class="proj-desc">Intelligent home automation hub controlled via machine learning routines and web interface.</div>
+                        <a href="https://github.com/Vexorix-Dev-create" class="proj-link" target="_blank">View Code &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Nova AI Assistant -->
             <div class="proj p3 up">
                 <div class="proj-inner">
                     <div class="proj-f">
-                        <div class="proj-num">03 / 03</div>
-                        <div class="proj-ico"
-                            style="background-image: url('/C:/Users/Asus/.gemini/antigravity/brain/27dfebe1-757e-4d73-b059-d88e2f203946/sorting_visualizer_tool_1772912403281.png'); background-size: cover; border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px;">
+                        <div class="proj-num">03 / 05</div>
+                        <div class="proj-ico">&#10024;</div>
+                        <div class="proj-title">Nova AI Assistant</div>
+                        <div class="proj-tags">
+                            <span class="ptag" style="color:var(--green);border-color:var(--green)">LLM</span>
+                            <span class="ptag" style="color:var(--orange);border-color:var(--orange)">WebApp</span>
                         </div>
-                        <div class="proj-title">Sorting Visualizer</div>
-                        <div class="proj-tags"><span class="ptag"
-                                style="color:var(--red);border-color:var(--red)">Algorithms</span><span class="ptag"
-                                style="color:var(--yellow);border-color:var(--yellow)">Front-End</span></div>
                     </div>
                     <div class="proj-bk">
-                        <div class="proj-desc">Real-time algorithm metrics: comparisons, swaps, and execution time.
+                        <div class="proj-desc">Custom web-based assistant built for instant code refactoring, context parsing, and natural queries.</div>
+                        <a href="https://github.com/Vexorix-Dev-create" class="proj-link" target="_blank">View Code &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Potli -->
+            <div class="proj p4 up">
+                <div class="proj-inner">
+                    <div class="proj-f">
+                        <div class="proj-num">04 / 05</div>
+                        <div class="proj-ico">&#128184;</div>
+                        <div class="proj-title">Potli</div>
+                        <div class="proj-tags">
+                            <span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">Vercel</span>
+                            <span class="ptag" style="color:var(--orange);border-color:var(--orange)">Budgeting</span>
                         </div>
-                        <a href="https://brahmpreett.github.io/Sorting_Visualizer/" class="proj-link"
-                            target="_blank">View Demo &rarr;</a>
+                    </div>
+                    <div class="proj-bk">
+                        <div class="proj-desc">Budget management website based on the Potli system. Tracking finances with local Indonesian context.</div>
+                        <a href="https://potlis.vercel.app" class="proj-link" target="_blank">View Live &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Sorting Visualizer -->
+            <div class="proj p5 up">
+                <div class="proj-inner">
+                    <div class="proj-f">
+                        <div class="proj-num">05 / 05</div>
+                        <div class="proj-ico">&#128200;</div>
+                        <div class="proj-title">Sorting Visualizer</div>
+                        <div class="proj-tags">
+                            <span class="ptag" style="color:var(--red);border-color:var(--red)">Algorithms</span>
+                            <span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">Front-End</span>
+                        </div>
+                    </div>
+                    <div class="proj-bk">
+                        <div class="proj-desc">Real-time algorithm metrics: step-by-step comparisons, swaps, and execution performance time.</div>
+                        <a href="https://brahmpreett.github.io/Sorting_Visualizer/" class="proj-link" target="_blank">View Demo &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -1871,29 +1803,22 @@
     <!-- FOOTER -->
     <footer>
         <div class="social-links">
-            <!-- GitHub Icon -->
             <a href="https://github.com/Vexorix-Dev-create" class="social-icon" target="_blank" aria-label="GitHub">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
             </a>
-    
-            <!-- Lynk.id Icon (Link Symbol) -->
             <a href="https://www.lynk.id/zyrexiea2" class="social-icon" target="_blank" aria-label="lynk">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                     <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                 </svg>
             </a>
-    
-            <!-- TikTok Icon -->
             <a href="https://www.tiktok.com/@zyxiea2" class="social-icon" target="_blank" aria-label="TikTok">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a3 3 0 0 1-3-3v7a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3"></path>
                 </svg>
             </a>
-    
-            <!-- Instagram Icon -->
             <a href="https://instagram.com/xzdy_55" class="social-icon" target="_blank" aria-label="Instagram">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -1901,15 +1826,11 @@
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
             </a>
-    
-            <!-- Telegram Icon -->
             <a href="https://t.me/RexzzForYou" class="social-icon" target="_blank" aria-label="Telegram">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                 </svg>
             </a>
-    
-            <!-- Email Icon -->
             <a href="mailto:zyrexiter@gmail.com" class="social-icon" aria-label="Email">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -1952,7 +1873,6 @@
                 navLinksEl.classList.toggle('active');
             });
 
-            // Close menu on link click
             navLinksEl.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     navToggle.classList.remove('active');
@@ -1990,7 +1910,7 @@
                 this.vy = -(Math.random() * .45 + .1);
                 this.rot = Math.random() * Math.PI * 2;
                 this.spin = (Math.random() - .5) * .045;
-                this.a = Math.random() * .12 + .02; // Reduced opacity for atmospheric feel
+                this.a = Math.random() * .12 + .02;
             }
             tick() {
                 this.x += this.vx; this.y += this.vy; this.rot += this.spin;
@@ -2007,10 +1927,9 @@
         (function tickP() { ctx.clearRect(0, 0, canvas.width, canvas.height); parts.forEach(p => { p.tick(); p.draw(); }); requestAnimationFrame(tickP); })();
 
         // ══════════════════════════════════════════════════
-        //  3D RUBIK'S CUBE — FULL 27-CUBIE SYSTEM
+        //  3D RUBIK'S CUBE SYSTEM
         // ══════════════════════════════════════════════════
         const CUBIE_PX = 66;
-        const GAP_PX = 0;
         const HALF_PX = 33;
         const STEP_PX = 66;
 
@@ -2079,13 +1998,10 @@
         }
 
         function snap(m) {
-            // Round translation components to nearest STEP_PX
             m.m41 = Math.round(m.m41 / STEP_PX) * STEP_PX;
             m.m42 = Math.round(m.m42 / STEP_PX) * STEP_PX;
             m.m43 = Math.round(m.m43 / STEP_PX) * STEP_PX;
 
-            // Round rotation components (top-left 3x3) to nearest integer (-1, 0, or 1)
-            // This ensures orthogonality and prevents skewing/distortion
             ['m11', 'm12', 'm13', 'm21', 'm22', 'm23', 'm31', 'm32', 'm33'].forEach(f => {
                 if (Math.abs(m[f]) < 0.1) m[f] = 0;
                 else m[f] = Math.sign(m[f]);
@@ -2094,7 +2010,6 @@
 
         function rotateLayer(axis, slice, angle, ms) {
             return new Promise(resolve => {
-                // Select cubies based on their current world-space snap-points
                 const layer = cubies.filter(c => {
                     const x = Math.round(c.m.m41 / STEP_PX);
                     const y = Math.round(-c.m.m42 / STEP_PX);
@@ -2105,51 +2020,38 @@
 
                 if (layer.length === 0) { resolve(); return; }
 
-                // Create a temporary pivot at scene origin
                 const pivot = document.createElement('div');
                 pivot.style.cssText = 'position:absolute;width:0;height:0;transform-style:preserve-3d;';
                 cubeScene.appendChild(pivot);
                 layer.forEach(c => pivot.appendChild(c.el));
+                pivot.getBoundingClientRect();
 
-                pivot.getBoundingClientRect(); // force layout
-
-                // Animation setup
                 if (ms > 0) {
                     pivot.style.transition = `transform ${ms}ms cubic-bezier(0.34, 1.25, 0.64, 1)`;
                 }
                 pivot.style.transform = axis === 'y' ? `rotateY(${angle}deg)` :
-                    axis === 'x' ? `rotateX(${angle}deg)` :
-                        `rotateZ(${angle}deg)`;
+                    axis === 'x' ? `rotateX(${angle}deg)` : `rotateZ(${angle}deg)`;
 
                 setTimeout(() => {
                     const rotStr = axis === 'y' ? `rotateY(${angle}deg)` :
-                        axis === 'x' ? `rotateX(${angle}deg)` :
-                            `rotateZ(${angle}deg)`;
+                        axis === 'x' ? `rotateX(${angle}deg)` : `rotateZ(${angle}deg)`;
                     const rotM = new DOMMatrix(rotStr);
 
                     layer.forEach(c => {
-                        // Math: New World Matrix = Rotation * Old World Matrix
                         c.m = rotM.multiply(c.m);
-
-                        // CRITICAL: Snap the matrix to clean integers to prevent drift/skew
                         snap(c.m);
-
-                        // Re-parent back to the main scene
                         cubeScene.appendChild(c.el);
-
-                        // Set the new transformation instantly
                         c.el.style.transition = 'none';
                         c.el.style.transform = c.m.toString();
-                        void c.el.offsetHeight; // force reflow
+                        void c.el.offsetHeight;
                     });
 
                     pivot.remove();
                     resolve();
-                }, ms + 40); // extra padding to ensure animation is 100% done
+                }, ms + 40);
             });
         }
 
-        // ── Move definitions ─────────────────────────────
         const MOVES = [
             { axis: 'y', slice: 1, angle: 90 }, { axis: 'y', slice: 1, angle: -90 },
             { axis: 'y', slice: 0, angle: 90 }, { axis: 'y', slice: 0, angle: -90 },
@@ -2180,7 +2082,6 @@
             if (b2) b2.disabled = v;
         }
 
-        // ── Scramble ─────────────────────────────────────
         async function scramble(n = 14, ms = 185) {
             if (busy) return;
             busy = true; setBtnsDisabled(true);
@@ -2199,7 +2100,6 @@
             setStatus('Scrambled — ready to solve');
         }
 
-        // ── Solve (reverse the history) ──────────────────
         async function solve(ms = 340) {
             if (busy || !history.length) return;
             busy = true; setBtnsDisabled(true);
@@ -2218,7 +2118,6 @@
         async function startScrambleSolve(n = 10, ms = 360) {
             const cubeWrapper = document.getElementById("cubeWrapper");
             if (!cubeWrapper) return;
-
             cubeWrapper.style.opacity = 0;
             await scramble(n, 0);
             cubeWrapper.style.opacity = 1;
@@ -2226,13 +2125,11 @@
             await solve(ms);
         }
 
-        // Build and start
         buildCube();
         startScrambleSolve(10, 380);
 
-        // Buttons
         document.getElementById('btnScramble').addEventListener('click', () => {
-            if (history.length > 0) return; // Only scramble if currently solved or at start
+            if (history.length > 0) return;
             manualMode = true; clearTimeout(manualTimer);
             manualTimer = setTimeout(() => { manualMode = false; }, 15000);
             scramble(14, 200);
@@ -2244,7 +2141,7 @@
         });
 
         // ══════════════════════════════════════════════════
-        //  WHOLE-CUBE DRAG WITH INERTIA
+        //  DRAG & INERTIA
         // ══════════════════════════════════════════════════
         let rotX = -22, rotY = 45;
         let velX = 0, velY = 0;
@@ -2257,23 +2154,19 @@
 
         (function animRot() {
             if (!dragging) {
-                // Inertia decay
                 velY *= 0.92; velX *= 0.92;
-                // Drift toward gentle auto-rotate when not in manual mode
                 if (!manualMode && !busy) {
                     velY += (0.25 - velY) * 0.025;
                     velX += (0 - velX) * 0.025;
                 }
                 rotY += velY;
                 rotX += velX;
-                // Clamp pitch
                 rotX = Math.max(-65, Math.min(65, rotX));
             }
             applyRot();
             requestAnimationFrame(animRot);
         })();
 
-        // Mouse drag
         const cubeVP = document.querySelector('.cube-viewport');
         cubeVP.addEventListener('mousedown', e => {
             dragging = true; lx2 = e.clientX; ly2 = e.clientY;
@@ -2292,13 +2185,11 @@
         document.addEventListener('mouseup', () => {
             if (!dragging) return;
             dragging = false;
-            // Pass final delta as launch velocity for inertia
             velY = lastDx * 0.85;
             velX = -lastDy * 0.85;
             manualTimer = setTimeout(() => { manualMode = false; }, 8000);
         });
 
-        // Touch drag
         cubeVP.addEventListener('touchstart', e => {
             dragging = true; lx2 = e.touches[0].clientX; ly2 = e.touches[0].clientY;
             velX = 0; velY = 0; lastDx = 0; lastDy = 0;
@@ -2334,14 +2225,13 @@
         })();
 
         // ══════════════════════════════════════════════════
-        //  SCROLL ANIMATIONS
+        //  SCROLL ANIMATIONS & STATS COUNTER
         // ══════════════════════════════════════════════════
         const io = new IntersectionObserver(entries => {
             entries.forEach(e => {
                 if (!e.isIntersecting) return;
                 e.target.classList.add('vis');
 
-                // Count up animation for stats
                 if (e.target.classList.contains('stat')) {
                     const numEl = e.target.querySelector('.stat-n');
                     if (numEl) {
@@ -2354,7 +2244,6 @@
                         function update(now) {
                             const elapsed = now - start;
                             const progress = Math.min(elapsed / duration, 1);
-                            // Ease out expo
                             const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
                             current = ease * target;
                             numEl.textContent = current.toFixed(decimals) + (decimals === 0 ? '+' : '');
@@ -2383,7 +2272,6 @@
                 const relX = e.clientX - centerX;
                 const relY = e.clientY - centerY;
 
-                // Closest point calculation for rectangular boundaries
                 const closestX = Math.max(rect.left, Math.min(e.clientX, rect.right));
                 const closestY = Math.max(rect.top, Math.min(e.clientY, rect.bottom));
                 const dx = e.clientX - closestX;
@@ -2399,15 +2287,6 @@
             });
         });
 
-        const barIO = new IntersectionObserver(entries => {
-            entries.forEach(e => {
-                if (!e.isIntersecting) return;
-                const bar = e.target.querySelector('.bar');
-                if (bar) setTimeout(() => { bar.style.width = bar.dataset.w + '%'; }, 420);
-            });
-        }, { threshold: .4 });
-        document.querySelectorAll('.skill-card').forEach(c => barIO.observe(c));
-
         // ══════════════════════════════════════════════════
         //  NAV ACTIVE STATE
         // ══════════════════════════════════════════════════
@@ -2418,7 +2297,6 @@
             sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur2 = s.id; });
             navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur2));
         }, { passive: true });
-
     </script>
 </body>
 
