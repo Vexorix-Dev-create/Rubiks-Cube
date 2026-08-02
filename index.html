@@ -940,7 +940,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+        }
+
+        .sf svg {
+            width: 32px;
+            height: 32px;
+            fill: currentColor;
+            color: #fff;
         }
 
         .sf.f {
@@ -1092,6 +1098,17 @@
             border-radius: 12px;
             height: 120px;
             width: 100%;
+            color: var(--yellow);
+        }
+
+        .proj-ico svg {
+            width: 48px;
+            height: 48px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
         }
 
         .proj-title {
@@ -1584,7 +1601,9 @@
             <div class="skill-card sk-html up">
                 <div class="sk-scene">
                     <div class="sk-cube" style="animation-delay:-5.25s">
-                        <div class="sf f" style="background:var(--red)">&#127760;</div>
+                        <div class="sf f" style="background:var(--red)">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
                         <div class="sf b" style="background:var(--red)"></div>
                         <div class="sf l" style="background:var(--red)"></div>
                         <div class="sf r" style="background:var(--red)"></div>
@@ -1601,7 +1620,9 @@
             <div class="skill-card sk-css up">
                 <div class="sk-scene">
                     <div class="sk-cube" style="animation-delay:-3.5s">
-                        <div class="sf f" style="background:#0051A2">&#129302;</div>
+                        <div class="sf f" style="background:#0051A2">
+                            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
                         <div class="sf b" style="background:#003d7a"></div>
                         <div class="sf l" style="background:#004489"></div>
                         <div class="sf r" style="background:#003d7a"></div>
@@ -1618,7 +1639,9 @@
             <div class="skill-card sk-js up">
                 <div class="sk-scene">
                     <div class="sk-cube" style="animation-delay:-1.75s">
-                        <div class="sf f" style="background:#FFD500">&#9729;</div>
+                        <div class="sf f" style="background:#FFD500">
+                            <svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                        </div>
                         <div class="sf b" style="background:#ccaa00"></div>
                         <div class="sf l" style="background:#dbb800"></div>
                         <div class="sf r" style="background:#ccaa00"></div>
@@ -1635,7 +1658,9 @@
             <div class="skill-card sk-py up">
                 <div class="sk-scene">
                     <div class="sk-cube" style="animation-delay:0s">
-                        <div class="sf f" style="background:#009B48">&#128013;</div>
+                        <div class="sf f" style="background:#009B48">
+                            <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
                         <div class="sf b" style="background:#007336"></div>
                         <div class="sf l" style="background:#00853e"></div>
                         <div class="sf r" style="background:#007336"></div>
@@ -1672,7 +1697,9 @@
                 <div class="proj-inner">
                     <div class="proj-f">
                         <div class="proj-num">01 / 05</div>
-                        <div class="proj-ico">&#129302;</div>
+                        <div class="proj-ico">
+                            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
                         <div class="proj-title">Shopsyra</div>
                         <div class="proj-tags">
                             <span class="ptag" style="color:var(--blue);border-color:var(--blue)">AI</span>
@@ -1691,7 +1718,9 @@
                 <div class="proj-inner">
                     <div class="proj-f">
                         <div class="proj-num">02 / 05</div>
-                        <div class="proj-ico">&#127968;</div>
+                        <div class="proj-ico">
+                            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
                         <div class="proj-title">SmartHome AI</div>
                         <div class="proj-tags">
                             <span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">IoT</span>
@@ -1710,7 +1739,9 @@
                 <div class="proj-inner">
                     <div class="proj-f">
                         <div class="proj-num">03 / 05</div>
-                        <div class="proj-ico">&#10024;</div>
+                        <div class="proj-ico">
+                            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
                         <div class="proj-title">Nova AI Assistant</div>
                         <div class="proj-tags">
                             <span class="ptag" style="color:var(--green);border-color:var(--green)">LLM</span>
@@ -1729,7 +1760,9 @@
                 <div class="proj-inner">
                     <div class="proj-f">
                         <div class="proj-num">04 / 05</div>
-                        <div class="proj-ico">&#128184;</div>
+                        <div class="proj-ico">
+                            <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
                         <div class="proj-title">Potli</div>
                         <div class="proj-tags">
                             <span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">Vercel</span>
@@ -1748,7 +1781,9 @@
                 <div class="proj-inner">
                     <div class="proj-f">
                         <div class="proj-num">05 / 05</div>
-                        <div class="proj-ico">&#128200;</div>
+                        <div class="proj-ico">
+                            <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        </div>
                         <div class="proj-title">Sorting Visualizer</div>
                         <div class="proj-tags">
                             <span class="ptag" style="color:var(--red);border-color:var(--red)">Algorithms</span>
